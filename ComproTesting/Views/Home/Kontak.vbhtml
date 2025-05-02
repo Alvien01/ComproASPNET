@@ -44,22 +44,55 @@ End Code
         margin-top: 30px;
     }
 
-    p {
-        text-align: center;
-        font-size: 1.1em;
-        line-height: 1.6;
-        background-color: #ffffff;
-        margin: 20px auto;
+    .content-section {
         padding: 20px;
-        border-radius: 10px;
-        width: 80%;
-        max-width: 600px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 1200px;
+        margin: auto;
     }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .contact-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease;
+        padding: 20px;
+    }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .contact-card a {
+            color: #2c3e50;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+            .contact-card a:hover {
+                color: #3498db;
+            }
 
     .footer {
         background-color: #34495e;
-        color: black;
+        color: white;
         text-align: center;
         padding: 15px;
         margin-top: 40px;
@@ -87,12 +120,23 @@ End Code
     </nav>
 </div>
 
-<h2>Kontak</h2>
-<p>
-    Email: info@company.com<br />
-    Telepon: +62 812-3456-7890<br />
-    Alamat: Jl. Contoh Alamat No. 123, Jakarta
-</p>
+<div class="content-section">
+    <h2>Kontak Kami</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+        <div class="contact-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+        </div>
+        <div class="contact-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
